@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 import HelloApp from './HelloApp';
-import { FisrtApp } from './FisrtApp';
+import { FirstApp } from './FisrtApp';
 
 import './style.css';
+import { CounterApp } from './CounterApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <HelloApp/> 
-        <FisrtApp subtitle='sub titulo props'/>
+        <CounterApp value = {2}/>
+        
     </React.StrictMode>
 );
